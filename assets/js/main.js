@@ -1,15 +1,32 @@
 const DEFAULT_LOCALE = "pt-BR";
 const SUPPORTED_LOCALES = ["pt-BR", "en", "es"];
-const languageSelect = document.querySelector("#language-select");
+const languageButtons = document.querySelectorAll("[data-locale]");
 const tipsList = document.querySelector("#tips-list");
 const tipsStatus = document.querySelector("#tips-status");
+let languageRequestId = 0;
+
+function readSavedLocale() {
+  try {
+    return localStorage.getItem("totalbattle-locale");
+  } catch {
+    return null;
+  }
+}
+
+function saveLocale(locale) {
+  try {
+    localStorage.setItem("totalbattle-locale", locale);
+  } catch {
+    // Some mobile webviews disable storage. The language still works for this visit.
+  }
+}
 
 function valueAtPath(object, path) {
   return path.split(".").reduce((value, key) => value?.[key], object);
 }
 
 function browserLocale() {
-  const savedLocale = localStorage.getItem("totalbattle-locale");
+  const savedLocale = readSavedLocale();
 
   if (SUPPORTED_LOCALES.includes(savedLocale)) {
     return savedLocale;
@@ -61,7 +78,6 @@ function applyInterface(messages) {
     }
   });
 
-  languageSelect.setAttribute("aria-label", messages.ui.languageLabel);
 }
 
 function renderTips(tips) {
@@ -88,6 +104,7 @@ function renderTips(tips) {
 }
 
 async function changeLanguage(locale) {
+  const requestId = ++languageRequestId;
   tipsStatus.hidden = false;
 
   try {
@@ -104,10 +121,16 @@ async function changeLanguage(locale) {
       locale = DEFAULT_LOCALE;
     }
 
+    if (requestId !== languageRequestId) {
+      return;
+    }
+
     applyInterface(messages);
     renderTips(messages.tips);
-    languageSelect.value = locale;
-    localStorage.setItem("totalbattle-locale", locale);
+    languageButtons.forEach((button) => {
+      button.setAttribute("aria-pressed", String(button.dataset.locale === locale));
+    });
+    saveLocale(locale);
     tipsStatus.hidden = true;
   } catch (error) {
     console.error(error);
@@ -115,8 +138,10 @@ async function changeLanguage(locale) {
   }
 }
 
-languageSelect.addEventListener("change", (event) => {
-  changeLanguage(event.target.value);
+languageButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    changeLanguage(button.dataset.locale);
+  });
 });
 
 document.querySelector("#year").textContent = new Date().getFullYear();

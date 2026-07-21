@@ -13,14 +13,11 @@
         <a class="brand" href="#inicio">Total Battle</a>
         <div class="nav-actions">
           <a class="nav-link" href="#dicas" data-i18n="ui.navTips">Dicas</a>
-          <label class="language-picker">
-            <span class="sr-only" data-i18n="ui.languageLabel">Idioma</span>
-            <select id="language-select" aria-label="Idioma">
-              <option value="pt-BR">Português</option>
-              <option value="en">English</option>
-              <option value="es">Español</option>
-            </select>
-          </label>
+          <div class="language-picker" role="group" aria-label="Idioma" data-i18n-aria-label="ui.languageLabel">
+            <button type="button" data-locale="pt-BR" aria-pressed="false" lang="pt-BR">PT</button>
+            <button type="button" data-locale="en" aria-pressed="false" lang="en">EN</button>
+            <button type="button" data-locale="es" aria-pressed="false" lang="es">ES</button>
+          </div>
         </div>
       </nav>
 
