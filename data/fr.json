@@ -1,0 +1,44 @@
+{
+  "locale": "fr",
+  "sourceLocale": "pt-BR",
+  "sourceHash": "905bfd4bec038d450bfc685c268c517e4cdc7abc9371ead9997b3dd6ae77a301",
+  "site": {
+    "title": "Total Battle — Astuces et Conseils",
+    "description": "Astuces, stratégies et guides multilingues pour Total Battle."
+  },
+  "ui": {
+    "mainNavigation": "Navigation principale",
+    "navTips": "Astuces",
+    "languageLabel": "Langue",
+    "heroEyebrow": "Guide communautaire multilingue",
+    "heroTitleLine1": "Construisez mieux.",
+    "heroTitleLine2": "Combattez avec stratégie.",
+    "intro": "Un point de rencontre pour astuces, conseils et guides de Total Battle.",
+    "cta": "Voir les premières astuces",
+    "sectionEyebrow": "Commencez ici",
+    "sectionTitle": "Bases pour progresser",
+    "loading": "Chargement des astuces…",
+    "loadError": "Impossible de charger les astuces.",
+    "footerNotice": "Projet indépendant réalisé par la communauté."
+  },
+  "tips": [
+    {
+      "id": "resource-planning",
+      "category": "Économie",
+      "title": "Planifiez les ressources",
+      "text": "Avant de lancer des constructions longues, vérifiez les exigences suivantes et gardez une réserve pour les événements."
+    },
+    {
+      "id": "join-a-clan",
+      "category": "Clans",
+      "title": "Rejoignez un clan",
+      "text": "L’aide des alliés réduit les temps, facilite les activités de groupe et accélère votre progression."
+    },
+    {
+      "id": "use-bonuses",
+      "category": "Progression",
+      "title": "Utilisez les bonus avec intention",
+      "text": "Combinez les bonus temporaires avec les recherches, constructions et entraînements les plus longs."
+    }
+  ]
+}

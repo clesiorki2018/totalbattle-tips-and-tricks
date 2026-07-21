@@ -1,0 +1,44 @@
+{
+  "locale": "de",
+  "sourceLocale": "pt-BR",
+  "sourceHash": "905bfd4bec038d450bfc685c268c517e4cdc7abc9371ead9997b3dd6ae77a301",
+  "site": {
+    "title": "Total Battle — Tipps und Tricks",
+    "description": "Tipps, Strategien und mehrsprachige Guides für Total Battle."
+  },
+  "ui": {
+    "mainNavigation": "Hauptnavigation",
+    "navTips": "Tipps",
+    "languageLabel": "Sprache",
+    "heroEyebrow": "Mehrsprachiger Community-Guide",
+    "heroTitleLine1": "Besser bauen.",
+    "heroTitleLine2": "Strategisch kämpfen.",
+    "intro": "Ein Treffpunkt für Tipps, Tricks und Guides zu Total Battle.",
+    "cta": "Erste Tipps ansehen",
+    "sectionEyebrow": "Hier anfangen",
+    "sectionTitle": "Grundlagen für Fortschritt",
+    "loading": "Tipps werden geladen…",
+    "loadError": "Tipps konnten nicht geladen werden.",
+    "footerNotice": "Unabhängiges Community-Projekt."
+  },
+  "tips": [
+    {
+      "id": "resource-planning",
+      "category": "Wirtschaft",
+      "title": "Ressourcen planen",
+      "text": "Bevor du lange Bauvorhaben startest, prüfe die folgenden Anforderungen und halte eine Reserve für Events bereit."
+    },
+    {
+      "id": "join-a-clan",
+      "category": "Clans",
+      "title": "Tritt einem Clan bei",
+      "text": "Hilfe von Verbündeten verkürzt Zeiten, erleichtert Gruppenaktivitäten und beschleunigt deine Entwicklung."
+    },
+    {
+      "id": "use-bonuses",
+      "category": "Fortschritt",
+      "title": "Bonusse gezielt einsetzen",
+      "text": "Kombiniere temporäre Boni mit Forschungen, Bauvorhaben und Trainings mit längerer Dauer."
+    }
+  ]
+}

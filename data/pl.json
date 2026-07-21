@@ -1,0 +1,44 @@
+{
+  "locale": "pl",
+  "sourceLocale": "pt-BR",
+  "sourceHash": "905bfd4bec038d450bfc685c268c517e4cdc7abc9371ead9997b3dd6ae77a301",
+  "site": {
+    "title": "Total Battle — Porady i Triki",
+    "description": "Porady, strategie i wielojęzyczne przewodniki do Total Battle."
+  },
+  "ui": {
+    "mainNavigation": "Główna nawigacja",
+    "navTips": "Porady",
+    "languageLabel": "Język",
+    "heroEyebrow": "Wielojęzyczny przewodnik społeczności",
+    "heroTitleLine1": "Buduj lepiej.",
+    "heroTitleLine2": "Walcz strategicznie.",
+    "intro": "Miejsce spotkań z poradami, trikami i przewodnikami do Total Battle.",
+    "cta": "Zobacz pierwsze porady",
+    "sectionEyebrow": "Zacznij tutaj",
+    "sectionTitle": "Podstawy rozwoju",
+    "loading": "Ładowanie porad…",
+    "loadError": "Nie udało się załadować porad.",
+    "footerNotice": "Niezależny projekt stworzony przez społeczność."
+  },
+  "tips": [
+    {
+      "id": "resource-planning",
+      "category": "Ekonomia",
+      "title": "Planuj zasoby",
+      "text": "Przed rozpoczęciem długich budów sprawdź wymagania i zachowaj rezerwę na wydarzenia."
+    },
+    {
+      "id": "join-a-clan",
+      "category": "Klan",
+      "title": "Dołącz do klanu",
+      "text": "Pomoc sojuszników skraca czasy, ułatwia działania grupowe i przyspiesza rozwój."
+    },
+    {
+      "id": "use-bonuses",
+      "category": "Rozwój",
+      "title": "Używaj bonusów celowo",
+      "text": "Łącz tymczasowe bonusy z badaniami, budowami i szkoleniami o dłuższym czasie trwania."
+    }
+  ]
+}
