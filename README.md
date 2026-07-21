@@ -22,7 +22,7 @@ Depois, acesse <http://localhost:8000>.
 
 O arquivo `data/pt-BR.json` é a fonte principal das dicas e dos textos da interface. Para publicar uma nova dica, edite esse arquivo e envie a alteração para a branch `main`.
 
-Um workflow do GitHub Actions usa o GitHub Models para atualizar automaticamente `data/en.json` e `data/es.json`. Em seguida, ele publica o site no GitHub Pages. O navegador escolhe o idioma preferido do visitante, e o seletor no topo salva a escolha em `localStorage`.
+Um workflow do GitHub Actions usa o GitHub Models para atualizar automaticamente inglês, espanhol, francês, alemão, russo e polonês. Em seguida, ele publica o site no GitHub Pages. O navegador escolhe o idioma preferido do visitante, e o seletor no topo salva a escolha em `localStorage`.
 
 Para executar a tradução manualmente no GitHub, abra **Actions → Translate and deploy → Run workflow**. Não é necessário cadastrar uma chave externa: o workflow utiliza o `GITHUB_TOKEN` temporário fornecido pelo GitHub.
 

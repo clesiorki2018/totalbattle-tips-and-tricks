@@ -1,5 +1,5 @@
 const DEFAULT_LOCALE = "pt-BR";
-const SUPPORTED_LOCALES = ["pt-BR", "en", "es"];
+const SUPPORTED_LOCALES = ["pt-BR", "en", "es", "fr", "de", "ru", "pl"];
 const languageButtons = document.querySelectorAll("[data-locale]");
 const tipsList = document.querySelector("#tips-list");
 const tipsStatus = document.querySelector("#tips-status");

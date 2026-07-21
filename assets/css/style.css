@@ -71,7 +71,8 @@ a {
 }
 
 .language-picker {
-  display: inline-flex;
+  display: inline-grid;
+  grid-template-columns: repeat(7, 2.75rem);
   border: 1px solid var(--line);
   background: var(--surface);
 }
@@ -230,6 +231,11 @@ footer {
 }
 
 @media (max-width: 720px) {
+  .nav {
+    flex-wrap: wrap;
+    gap: .75rem;
+  }
+
   .card-grid {
     grid-template-columns: 1fr;
   }
@@ -239,7 +245,13 @@ footer {
   }
 
   .nav-actions {
+    width: 100%;
+    justify-content: flex-end;
     gap: .75rem;
+  }
+
+  .language-picker {
+    grid-template-columns: repeat(4, 2.75rem);
   }
 
   .nav-link {

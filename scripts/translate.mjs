@@ -7,6 +7,10 @@ const MODEL = process.env.TRANSLATION_MODEL ?? "openai/gpt-4.1-mini";
 const TARGETS = [
   { locale: "en", language: "English" },
   { locale: "es", language: "Spanish" },
+  { locale: "fr", language: "French" },
+  { locale: "de", language: "German" },
+  { locale: "ru", language: "Russian" },
+  { locale: "pl", language: "Polish" },
 ];
 
 const sourceText = await readFile(SOURCE_PATH, "utf8");
