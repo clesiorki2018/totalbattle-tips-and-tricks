@@ -1,7 +1,7 @@
 {
   "locale": "es",
   "sourceLocale": "pt-BR",
-  "sourceHash": "2ebacba14904bee6cce7b10446e49b27e85750dd7fd531ebf6d408646bd759d6",
+  "sourceHash": "905bfd4bec038d450bfc685c268c517e4cdc7abc9371ead9997b3dd6ae77a301",
   "site": {
     "title": "Total Battle — Consejos y Trucos",
     "description": "Consejos, estrategias y guías multilingües para Total Battle."
@@ -10,7 +10,7 @@
     "mainNavigation": "Navegación principal",
     "navTips": "Consejos",
     "languageLabel": "Idioma",
-    "heroEyebrow": "Guía comunitaria en portugués",
+    "heroEyebrow": "Guía comunitaria multilingüe",
     "heroTitleLine1": "Construye mejor.",
     "heroTitleLine2": "Lucha con estrategia.",
     "intro": "Un punto de encuentro para consejos, trucos y guías de Total Battle.",

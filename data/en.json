@@ -1,7 +1,7 @@
 {
   "locale": "en",
   "sourceLocale": "pt-BR",
-  "sourceHash": "2ebacba14904bee6cce7b10446e49b27e85750dd7fd531ebf6d408646bd759d6",
+  "sourceHash": "905bfd4bec038d450bfc685c268c517e4cdc7abc9371ead9997b3dd6ae77a301",
   "site": {
     "title": "Total Battle — Tips and Tricks",
     "description": "Tips, strategies, and multilingual guides for Total Battle."
@@ -10,13 +10,13 @@
     "mainNavigation": "Main Navigation",
     "navTips": "Tips",
     "languageLabel": "Language",
-    "heroEyebrow": "Community guide in Portuguese",
+    "heroEyebrow": "Multilingual Community Guide",
     "heroTitleLine1": "Build better.",
-    "heroTitleLine2": "Fight strategically.",
+    "heroTitleLine2": "Fight with strategy.",
     "intro": "A meeting point for Total Battle tips, tricks, and guides.",
     "cta": "See first tips",
     "sectionEyebrow": "Start here",
-    "sectionTitle": "Fundamentals to progress",
+    "sectionTitle": "Basics to level up",
     "loading": "Loading tips…",
     "loadError": "Failed to load tips.",
     "footerNotice": "Independent community project."
@@ -32,13 +32,13 @@
       "id": "join-a-clan",
       "category": "Clans",
       "title": "Join a clan",
-      "text": "Ally support reduces times, eases group activities, and speeds up your development."
+      "text": "Ally support reduces times, eases group activities, and speeds up your progress."
     },
     {
       "id": "use-bonuses",
       "category": "Progression",
       "title": "Use bonuses intentionally",
-      "text": "Combine temporary bonuses with longer research, construction, and training."
+      "text": "Combine temporary bonuses with longer research, construction, and training tasks."
     }
   ]
 }
