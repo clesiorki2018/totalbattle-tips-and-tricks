@@ -1,44 +1,44 @@
 {
   "locale": "en",
   "sourceLocale": "pt-BR",
-  "sourceHash": "a403ec03070f58de50ca9cd8ccbda1fd93ca4b2528a9958239b3e976c1bc477a",
+  "sourceHash": "2ebacba14904bee6cce7b10446e49b27e85750dd7fd531ebf6d408646bd759d6",
   "site": {
     "title": "Total Battle — Tips and Tricks",
-    "description": "Tips, strategies, and guides for Total Battle."
+    "description": "Tips, strategies, and multilingual guides for Total Battle."
   },
   "ui": {
-    "mainNavigation": "Main navigation",
+    "mainNavigation": "Main Navigation",
     "navTips": "Tips",
     "languageLabel": "Language",
-    "heroEyebrow": "Community guide in English",
+    "heroEyebrow": "Community guide in Portuguese",
     "heroTitleLine1": "Build better.",
     "heroTitleLine2": "Fight strategically.",
-    "intro": "A gathering place for Total Battle tips, tricks, and guides.",
-    "cta": "See the first tips",
+    "intro": "A meeting point for Total Battle tips, tricks, and guides.",
+    "cta": "See first tips",
     "sectionEyebrow": "Start here",
-    "sectionTitle": "The foundations of progress",
+    "sectionTitle": "Fundamentals to progress",
     "loading": "Loading tips…",
-    "loadError": "The tips could not be loaded.",
-    "footerNotice": "An independent project made by the community."
+    "loadError": "Failed to load tips.",
+    "footerNotice": "Independent community project."
   },
   "tips": [
     {
       "id": "resource-planning",
       "category": "Economy",
       "title": "Plan your resources",
-      "text": "Before starting long construction projects, check the next requirements and keep a reserve for events."
+      "text": "Before starting long constructions, check upcoming requirements and keep a reserve for events."
     },
     {
       "id": "join-a-clan",
       "category": "Clans",
       "title": "Join a clan",
-      "text": "Help from allies reduces timers, makes group activities easier, and speeds up your development."
+      "text": "Ally support reduces times, eases group activities, and speeds up your development."
     },
     {
       "id": "use-bonuses",
       "category": "Progression",
       "title": "Use bonuses intentionally",
-      "text": "Combine temporary bonuses with your longest research, construction, and training tasks."
+      "text": "Combine temporary bonuses with longer research, construction, and training."
     }
   ]
 }
