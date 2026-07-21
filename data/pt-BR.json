@@ -1,0 +1,42 @@
+{
+  "locale": "pt-BR",
+  "site": {
+    "title": "Total Battle — Dicas e Truques",
+    "description": "Dicas, estratégias e guias em português para Total Battle."
+  },
+  "ui": {
+    "mainNavigation": "Navegação principal",
+    "navTips": "Dicas",
+    "languageLabel": "Idioma",
+    "heroEyebrow": "Guia comunitário em português",
+    "heroTitleLine1": "Construa melhor.",
+    "heroTitleLine2": "Combata com estratégia.",
+    "intro": "Um ponto de encontro para dicas, truques e guias de Total Battle.",
+    "cta": "Ver primeiras dicas",
+    "sectionEyebrow": "Comece por aqui",
+    "sectionTitle": "Fundamentos para evoluir",
+    "loading": "Carregando dicas…",
+    "loadError": "Não foi possível carregar as dicas.",
+    "footerNotice": "Projeto independente feito pela comunidade."
+  },
+  "tips": [
+    {
+      "id": "resource-planning",
+      "category": "Economia",
+      "title": "Planeje os recursos",
+      "text": "Antes de iniciar construções longas, confira os requisitos seguintes e mantenha uma reserva para eventos."
+    },
+    {
+      "id": "join-a-clan",
+      "category": "Clãs",
+      "title": "Participe de um clã",
+      "text": "A ajuda de aliados reduz tempos, facilita atividades em grupo e acelera seu desenvolvimento."
+    },
+    {
+      "id": "use-bonuses",
+      "category": "Evolução",
+      "title": "Use bônus com intenção",
+      "text": "Combine bônus temporários com pesquisas, construções e treinamentos de maior duração."
+    }
+  ]
+}

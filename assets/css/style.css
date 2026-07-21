@@ -49,6 +49,12 @@ a {
   padding-block: 1.5rem;
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
 .brand {
   color: var(--gold-light);
   font-family: Georgia, serif;
@@ -62,6 +68,36 @@ a {
 .nav-link {
   color: var(--muted);
   text-underline-offset: .35rem;
+}
+
+.language-picker select {
+  min-height: 2.5rem;
+  padding: .45rem 2.25rem .45rem .75rem;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.language-picker select:focus-visible,
+.button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 3px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .hero-content {
@@ -146,6 +182,14 @@ h2 {
   letter-spacing: .1em;
 }
 
+.card-category {
+  margin-left: .75rem;
+  color: var(--muted);
+  font-size: .75rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
 .card h3 {
   margin: 1.5rem 0 .75rem;
   font-size: 1.5rem;
@@ -154,6 +198,14 @@ h2 {
 .card p {
   margin: 0;
   color: var(--muted);
+}
+
+.status {
+  color: var(--muted);
+}
+
+.status[hidden] {
+  display: none;
 }
 
 footer {
@@ -176,5 +228,13 @@ footer {
 
   .footer-content {
     display: block;
+  }
+
+  .nav-actions {
+    gap: .75rem;
+  }
+
+  .nav-link {
+    display: none;
   }
 }

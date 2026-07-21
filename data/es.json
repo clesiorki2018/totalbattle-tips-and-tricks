@@ -1,0 +1,44 @@
+{
+  "locale": "es",
+  "sourceLocale": "pt-BR",
+  "sourceHash": "a403ec03070f58de50ca9cd8ccbda1fd93ca4b2528a9958239b3e976c1bc477a",
+  "site": {
+    "title": "Total Battle — Consejos y Trucos",
+    "description": "Consejos, estrategias y guías de Total Battle."
+  },
+  "ui": {
+    "mainNavigation": "Navegación principal",
+    "navTips": "Consejos",
+    "languageLabel": "Idioma",
+    "heroEyebrow": "Guía comunitaria en español",
+    "heroTitleLine1": "Construye mejor.",
+    "heroTitleLine2": "Combate con estrategia.",
+    "intro": "Un punto de encuentro para consejos, trucos y guías de Total Battle.",
+    "cta": "Ver los primeros consejos",
+    "sectionEyebrow": "Empieza aquí",
+    "sectionTitle": "Fundamentos para progresar",
+    "loading": "Cargando consejos…",
+    "loadError": "No se pudieron cargar los consejos.",
+    "footerNotice": "Un proyecto independiente creado por la comunidad."
+  },
+  "tips": [
+    {
+      "id": "resource-planning",
+      "category": "Economía",
+      "title": "Planifica los recursos",
+      "text": "Antes de iniciar construcciones largas, comprueba los siguientes requisitos y mantén una reserva para eventos."
+    },
+    {
+      "id": "join-a-clan",
+      "category": "Clanes",
+      "title": "Únete a un clan",
+      "text": "La ayuda de los aliados reduce los tiempos, facilita las actividades en grupo y acelera tu desarrollo."
+    },
+    {
+      "id": "use-bonuses",
+      "category": "Progreso",
+      "title": "Usa los bonos con intención",
+      "text": "Combina los bonos temporales con las investigaciones, construcciones y entrenamientos de mayor duración."
+    }
+  ]
+}

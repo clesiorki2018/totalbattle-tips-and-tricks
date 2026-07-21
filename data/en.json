@@ -1,0 +1,44 @@
+{
+  "locale": "en",
+  "sourceLocale": "pt-BR",
+  "sourceHash": "a403ec03070f58de50ca9cd8ccbda1fd93ca4b2528a9958239b3e976c1bc477a",
+  "site": {
+    "title": "Total Battle — Tips and Tricks",
+    "description": "Tips, strategies, and guides for Total Battle."
+  },
+  "ui": {
+    "mainNavigation": "Main navigation",
+    "navTips": "Tips",
+    "languageLabel": "Language",
+    "heroEyebrow": "Community guide in English",
+    "heroTitleLine1": "Build better.",
+    "heroTitleLine2": "Fight strategically.",
+    "intro": "A gathering place for Total Battle tips, tricks, and guides.",
+    "cta": "See the first tips",
+    "sectionEyebrow": "Start here",
+    "sectionTitle": "The foundations of progress",
+    "loading": "Loading tips…",
+    "loadError": "The tips could not be loaded.",
+    "footerNotice": "An independent project made by the community."
+  },
+  "tips": [
+    {
+      "id": "resource-planning",
+      "category": "Economy",
+      "title": "Plan your resources",
+      "text": "Before starting long construction projects, check the next requirements and keep a reserve for events."
+    },
+    {
+      "id": "join-a-clan",
+      "category": "Clans",
+      "title": "Join a clan",
+      "text": "Help from allies reduces timers, makes group activities easier, and speeds up your development."
+    },
+    {
+      "id": "use-bonuses",
+      "category": "Progression",
+      "title": "Use bonuses intentionally",
+      "text": "Combine temporary bonuses with your longest research, construction, and training tasks."
+    }
+  ]
+}

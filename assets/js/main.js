@@ -1,1 +1,123 @@
+const DEFAULT_LOCALE = "pt-BR";
+const SUPPORTED_LOCALES = ["pt-BR", "en", "es"];
+const languageSelect = document.querySelector("#language-select");
+const tipsList = document.querySelector("#tips-list");
+const tipsStatus = document.querySelector("#tips-status");
+
+function valueAtPath(object, path) {
+  return path.split(".").reduce((value, key) => value?.[key], object);
+}
+
+function browserLocale() {
+  const savedLocale = localStorage.getItem("totalbattle-locale");
+
+  if (SUPPORTED_LOCALES.includes(savedLocale)) {
+    return savedLocale;
+  }
+
+  const preferredLanguages = navigator.languages ?? [navigator.language];
+
+  for (const language of preferredLanguages) {
+    const match = SUPPORTED_LOCALES.find((locale) =>
+      language.toLowerCase().startsWith(locale.split("-")[0].toLowerCase()),
+    );
+
+    if (match) {
+      return match;
+    }
+  }
+
+  return DEFAULT_LOCALE;
+}
+
+async function fetchMessages(locale) {
+  const response = await fetch(`data/${locale}.json`);
+
+  if (!response.ok) {
+    throw new Error(`Could not load locale ${locale}: ${response.status}`);
+  }
+
+  return response.json();
+}
+
+function applyInterface(messages) {
+  document.documentElement.lang = messages.locale;
+  document.title = messages.site.title;
+  document.querySelector('meta[name="description"]').content = messages.site.description;
+
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const value = valueAtPath(messages, element.dataset.i18n);
+
+    if (typeof value === "string") {
+      element.textContent = value;
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+    const value = valueAtPath(messages, element.dataset.i18nAriaLabel);
+
+    if (typeof value === "string") {
+      element.setAttribute("aria-label", value);
+    }
+  });
+
+  languageSelect.setAttribute("aria-label", messages.ui.languageLabel);
+}
+
+function renderTips(tips) {
+  tipsList.replaceChildren();
+
+  tips.forEach((tip, index) => {
+    const card = document.createElement("article");
+    const number = document.createElement("span");
+    const category = document.createElement("span");
+    const title = document.createElement("h3");
+    const text = document.createElement("p");
+
+    card.className = "card";
+    number.className = "card-number";
+    number.textContent = String(index + 1).padStart(2, "0");
+    category.className = "card-category";
+    category.textContent = tip.category;
+    title.textContent = tip.title;
+    text.textContent = tip.text;
+
+    card.append(number, category, title, text);
+    tipsList.append(card);
+  });
+}
+
+async function changeLanguage(locale) {
+  tipsStatus.hidden = false;
+
+  try {
+    let messages;
+
+    try {
+      messages = await fetchMessages(locale);
+    } catch (error) {
+      if (locale === DEFAULT_LOCALE) {
+        throw error;
+      }
+
+      messages = await fetchMessages(DEFAULT_LOCALE);
+      locale = DEFAULT_LOCALE;
+    }
+
+    applyInterface(messages);
+    renderTips(messages.tips);
+    languageSelect.value = locale;
+    localStorage.setItem("totalbattle-locale", locale);
+    tipsStatus.hidden = true;
+  } catch (error) {
+    console.error(error);
+    tipsStatus.textContent = "Não foi possível carregar as dicas.";
+  }
+}
+
+languageSelect.addEventListener("change", (event) => {
+  changeLanguage(event.target.value);
+});
+
 document.querySelector("#year").textContent = new Date().getFullYear();
+changeLanguage(browserLocale());

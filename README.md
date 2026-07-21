@@ -1,6 +1,6 @@
 # Total Battle — Dicas e Truques
 
-Site comunitário, em português, com dicas, estratégias e guias para o jogo **Total Battle**.
+Site comunitário e multilíngue com dicas, estratégias e guias para o jogo **Total Battle**.
 
 ## Acessar o site
 
@@ -17,6 +17,14 @@ python3 -m http.server 8000
 ```
 
 Depois, acesse <http://localhost:8000>.
+
+## Conteúdo e traduções
+
+O arquivo `data/pt-BR.json` é a fonte principal das dicas e dos textos da interface. Para publicar uma nova dica, edite esse arquivo e envie a alteração para a branch `main`.
+
+Um workflow do GitHub Actions usa o GitHub Models para atualizar automaticamente `data/en.json` e `data/es.json`. Em seguida, ele publica o site no GitHub Pages. O navegador escolhe o idioma preferido do visitante, e o seletor no topo salva a escolha em `localStorage`.
+
+Para executar a tradução manualmente no GitHub, abra **Actions → Translate and deploy → Run workflow**. Não é necessário cadastrar uma chave externa: o workflow utiliza o `GITHUB_TOKEN` temporário fornecido pelo GitHub.
 
 ## Contribuir
 
